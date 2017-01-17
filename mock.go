@@ -179,6 +179,8 @@ func NewMock(path string, nodes uint, replicas uint, vbuckets uint, specs ...Buc
 	log.Printf("Listening for control connection at %s\n", ctlPort)
 
 	go func() {
+		var err error
+		
 		defer func() {
 			chAccept <- false
 		}()
