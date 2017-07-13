@@ -180,7 +180,7 @@ func NewMock(path string, nodes uint, replicas uint, vbuckets uint, specs ...Buc
 
 	go func() {
 		var err error
-		
+
 		defer func() {
 			chAccept <- false
 		}()

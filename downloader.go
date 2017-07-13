@@ -14,7 +14,7 @@ import (
 // Downloads and caches the mock server, so that it is retrievable
 // for automatic testing
 
-const defaultMockFile = "CouchbaseMock-1.4.0.jar"
+const defaultMockFile = "CouchbaseMock-1.5.5.jar"
 const defaultMockUrl = "http://packages.couchbase.com/clients/c/mock/" + defaultMockFile
 
 // Ensures that the mock path is available
