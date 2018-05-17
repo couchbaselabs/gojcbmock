@@ -15,7 +15,7 @@ import (
 // for automatic testing
 
 const defaultMockFile = "CouchbaseMock-1.5.15.jar"
-const defaultMockUrl = "http://packages.couchbase.com/clients/c/mock/" + defaultMockFile
+const defaultMockUrl = "https://packages.couchbase.com/clients/c/mock/" + defaultMockFile
 
 // Ensures that the mock path is available
 func GetMockPath() (path string, err error) {
