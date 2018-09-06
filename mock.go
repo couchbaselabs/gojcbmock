@@ -131,6 +131,10 @@ func (m *Mock) MemcachedPorts() (out []uint16) {
 	return
 }
 
+func (m *Mock) Version() string {
+	return defaultMockVersion
+}
+
 func (m *Mock) buildSpecStrings(specs []BucketSpec) string {
 	strSpecs := []string{}
 	for _, spec := range specs {
